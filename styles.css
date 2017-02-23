@@ -1,0 +1,227 @@
+html {
+  /*height: 100%;*/
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #466d6d;
+}
+
+#grad {
+  background: #0a1010; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #283e3e, #0a1010); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #283e3e, #0a1010); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #283e3e, #0a1010); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #283e3e, #0a1010); /* Standard syntax */
+}
+
+#fnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(51,51,51,0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#fnavli {
+  float: left;
+}
+
+#fnavli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#fnavli a:hover:not(.active), .dropdown:hover .dropbtn {
+  background-color: rgba(17,17,17,0.6);
+  /*transition: 1s;*/
+}
+
+.active {
+  background-color: rgba(71,107,107,0.6);
+}
+
+
+.dropdown {
+  display: inline-block;
+  transition: 1s;
+}
+.dropdown:hover {
+  /*min-width:160px;
+  display:inline-block;*/
+}
+
+#container {
+  width:120px; /*bad non-relative code :( */
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+  transition: width 2s;
+
+}
+
+
+#container:hover {
+  width:240px; /*bad non-relative code :( */
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -o-transition: width 2s;
+  transition: width 2s;
+
+}
+
+
+.dropdown-content {
+  /*visibility: hidden;*/
+  position: fixed;
+  width:240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 0px 0px 7px 7px;
+}
+
+/*
+.dropdown:not(:hover) .dropdown-content {
+  /*
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear, visibility 0s linear 1s;
+  -moz-transition: opacity 1s linear, visibility 0s linear 1s;
+  -o-transition: opacity 1s linear, visibility 0s linear 1s;
+  transition: opacity 1s linear, visibility 0s linear 1s;
+  
+
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear 1s, opacity 1s linear;
+  -moz-transition: visibility 0s linear 1s, opacity 1s linear;
+  -o-transition: visibility 0s linear 1s, opacity 1s linear;
+  transition: visibility 0s linear 1s, opacity 1s linear;
+
+}*/
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  background-color: rgba(51,51,51,0.9);
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  /*transition: 0.5s;*/
+}
+
+.dropdown-content a#btm {
+  border-radius: 0px 0px 7px 7px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(17,17,17,0.9) !important;
+  /*transition: 1s;*/
+}
+
+/*
+.dropdown:hover .dropdown-content {
+  /*display: block;
+  visibility: visible;
+  opacity: 1;
+  /*
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  
+  transition-delay:0s;
+}*/
+
+.test:hover .makeinv {
+  visibility: visible;
+  /*opacity: 1;*/
+}
+
+.test .makeinv {
+  visibility: hidden;
+  /*opacity: 0;
+  -webkit-transition: visibility 0s linear 1s, opacity 1s linear;
+  -moz-transition: visibility 0s linear 1s, opacity 1s linear;
+  -o-transition: visibility 0s linear 1s, opacity 1s linear;
+  transition: visibility 0s linear 1s, opacity 1s linear;*/
+
+}
+
+#notnav {
+  /*padding: 20px;*/
+  margin-top:30px;
+  height: 100%;
+}
+
+#article {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:46px;
+  margin-bottom:20px;
+
+  border-radius: 5px 5px 10px 10px;
+  
+  max-width: 800px;
+  padding: 20px;
+  /*border-style: outset;*/
+  box-shadow: 2px 2px 2px 2px #0d0d0d;
+  background-color: #e0ebeb;
+}
+
+h1 {
+   font-size: 3.6em; /*46px;*/
+   color: #324e4e;
+   text-align: center;
+   /*text-transform: uppercase;*/
+   font-weight: 900;
+   line-height 1.1;
+   margin-bottom:10px;
+}
+
+h2 {
+   font-size: 2.0em; /*46px;*/
+   color: #304e4e;
+   text-align: center;
+   /*text-transform: uppercase;*/
+   font-weight: 400;
+   line-height 1.1;
+   margin-bottom:10px;
+}
+
+p {
+  /*font-family: "Times New Roman";*/
+  font-size: 20px;
+}
+
+footer {
+  color: #334d4d;
+  text-align: center;
+  float: bottom;
+  bottom: 0;
+  width:100%
+}
+
+/* ********************
+   * Visiblility      *
+   ******************** */
+
+.test:hover .visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.test .visible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
