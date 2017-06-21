@@ -55,7 +55,7 @@ body {
 
 .dropdown {
   display: inline-block;
-  transition: 1s;
+  transition: 0.3s;
 }
 .dropdown:hover {
   /*min-width:160px;
@@ -64,20 +64,20 @@ body {
 
 #container {
   width:120px; /*bad non-relative code :( */
-  -webkit-transition: width 2s;
-  -moz-transition: width 2s;
-  -o-transition: width 2s;
-  transition: width 2s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
 
 }
 
 
 #container:hover {
   width:240px; /*bad non-relative code :( */
-  -webkit-transition: width 2s;
-  -moz-transition: width 2s;
-  -o-transition: width 2s;
-  transition: width 2s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
 
 }
 
@@ -189,10 +189,10 @@ footer {
 .test:hover .visible {
   visibility: visible;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 0.3s linear;
 }
 .test .visible {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
 }
