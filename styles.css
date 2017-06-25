@@ -128,7 +128,6 @@ body {
   margin-right: auto;
   margin-top:46px;
   margin-bottom:25px;
-
   border-radius: 5px 5px 10px 10px;
   
   max-width: 800px;
@@ -167,6 +166,16 @@ p {
   color: #264d4d;
   font-size: 26px;
   text-decoration: none;
+}
+
+.caption {
+  text-align: center;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 footer {
