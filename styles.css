@@ -178,6 +178,29 @@ iframe {
   display: block;
 }
 
+div.polaroid {
+  width: 30%;
+  height: auto;
+  background-color: #fffcf7;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  /*margin-bottom: 25px;*/
+  /*margin: 10px;*/
+  float: left;
+  border-radius: 4%;
+}
+
+div.polaroid img {
+  width:100%;
+  border-top-right-radius: 4%;
+  border-top-left-radius: 4%;
+  /*margin: 2%;*/
+}
+
+div.polaroid p {
+  font-size: 12px;
+  text-align: center;
+}
+
 footer {
   color: #a3bdbd;/* #536d6d; */
   background:#132d2d;
